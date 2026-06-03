@@ -1,47 +1,49 @@
-# Sobre Nós
-# 🧪 Lanked Lab | Hub de Desenvolvimento
+# 🎮 Sobre Nós | NakeDev Organization
 
-Bem-vindo ao **Lanked Lab**, o braço de experimentação e repositório central da nossa equipe de desenvolvimento. Este espaço funciona como a fundação técnica vinculada ao nosso estúdio de jogos, servindo de ponte entre a criatividade e a engenharia de software.
+Bem-vindo à **NakeDev Org.**! 
 
----
-
-## 🚀 Sobre o Laboratório
-
-O Lanked Lab não é apenas um repositório de código, mas um ecossistema onde a equipe colabora em soluções tecnológicas, mecânicas de jogos e ferramentas de software. Nosso foco principal é:
-
-* **Game Development:** Prototipagem de sistemas, arquitetura em Unity e exploração de mecânicas voltadas ao gênero *Dark Fantasy*.
-* **Web & Infrastructure:** Desenvolvimento de ferramentas de suporte, como portais de comunidade (Next.js/PHP) e sistemas de monitoramento.
-* **Open Source:** Disponibilizamos frameworks e ferramentas que podem auxiliar outros desenvolvedores da comunidade indie.
+Este é o nosso espaço de trabalho colaborativo, focado no desenvolvimento de games e criação de mecânicas próprias. Nosso principal objetivo é construir e compartilhar recursos de alta qualidade com os membros, fomentando um ambiente onde todos possam acelerar a produção de seus próprios jogos.
 
 ---
 
-## 👥 Nosso Portfólio & Equipe
+## 🌟 Benefícios para os Membros
 
-Este Github Organization centraliza tanto o esforço coletivo do estúdio quanto a expertise individual de nossos membros. Aqui você encontrará:
-
-1.  **Projetos da Equipe:** Repositórios públicos dos nossos jogos em desenvolvimento e bibliotecas de sistemas.
-2.  **Portfolio Individual:** Projetos destacados de nossos desenvolvedores, artistas e gestores, demonstrando a versatilidade técnica de cada integrante.
-3.  **Community Tools:** Projetos dedicados à gestão e engajamento de comunidades de jogos.
-
----
-
-## 🛠️ Tecnologias Frequentes
-
-No nosso laboratório, manipulamos principalmente:
-
-| Área | Tecnologias |
-| :--- | :--- |
-| **Gamedev** | Unity, C#, Pixel Art Workflow |
-| **DevOps** | GitHub Actions, WebGL Deployment |
+Ao fazer parte da NakeDev Org., você tem acesso a ferramentas poderosas para impulsionar seus projetos:
+- **Aceleração no Desenvolvimento:** Utilize sistemas prontos e validados para pular etapas longas de programação nos seus próprios jogos.
+- **Aprendizado e Colaboração:** Estude as mecânicas, entenda como sistemas complexos funcionam por baixo dos panos e colabore com outros desenvolvedores.
+- **Criação de Jogos Próprios:** Você é totalmente encorajado a usar nossos sistemas e *frameworks* de base para criar, desenvolver e até lançar comercialmente seus próprios jogos (respeitando as regras do código-fonte, descritas abaixo).
 
 ---
 
-## 🤝 Conecte-se conosco
+## 📜 Regras e Proteção Comercial
 
-Estamos sempre abertos a trocas de experiências com outros desenvolvedores e entusiastas de gamedev.
+Nós apoiamos que você use estas ferramentas para fazer seus jogos brilharem, mas precisamos proteger nosso **código-fonte base** e os **projetos oficiais do estúdio** (jogos destinados a plataformas como Steam, Itch.io, etc.). Ao acessar os repositórios, você concorda com o seguinte:
 
-* **Projeto de Parceiros:** *Skillforged*.
+1. **Foco no Uso Prático:** Você pode (e deve!) usar os scripts e *assets* aqui contidos para desenvolver os jogos do estúdio e os seus próprios jogos.
+2. **O que NÃO PODE ser vendido:** É terminantemente **PROIBIDO** revender, distribuir ou licenciar os códigos-fontes, pacotes de sistemas ou *assets* soltos.
+3. **O que PODE ser vendido:** Você pode comercializar o **jogo final (compilado)** que você construiu utilizando nossos sistemas. Você não vende a "ferramenta", apenas a "obra final".
+4. **Respeito à Autoria:** É **PROIBIDO** apagar a autoria original ou alterar os *namespaces* dos scripts para assumir autoria própria com a intenção de revender o código.
+5. **Proteção dos Jogos do Estúdio:** Projetos completos e jogos comerciais oficiais da NakeDev são estritamente fechados. É proibido vazar, copiar ou distribuir partes exclusivas desses projetos finais.
+6. **Privacidade:** Repositórios da organização devem manter-se rigorosamente **PRIVADOS**.
 
 ---
 
-> *"Transformando linhas de código em experiências imersivas."*
+## ⚖️ Propriedade Intelectual (Copyright)
+
+Os códigos-fontes base (sistemas centrais) e os jogos oficiais do estúdio são de propriedade intelectual de **Matheus Nakati** e estão protegidos por leis de Direitos Autorais (como a Lei nº 9.610/98).
+
+> [!CAUTION]
+> **PROTEÇÃO DO CÓDIGO E PROJETOS OFICIAIS**
+> Os repositórios centrais de sistemas não podem ser modificados na sua raiz sem aprovação por *Pull Request* e permissão do autor. Qualquer violação grave dos termos – como pirataria de código-fonte, redistribuição do *framework* ou vazamento de jogos comerciais da organização – resultará na remoção imediata e nas medidas legais cabíveis.
+
+---
+
+## 👨‍💻 Autoria e Desenvolvimento Base
+
+Muitos dos sistemas fundamentais e arquiteturas centrais que você encontrará aqui foram idealizados e desenvolvidos do zero por **Matheus Nakati** (GitHub: [Nakatimat](https://github.com/Nakatimat) / Nakemo).
+
+Eles são fruto de muita dedicação e estudo prático em desenvolvimento avançado de jogos, e estão disponibilizados aqui para servir como um motor que impulsiona as criações de toda a equipe.
+
+---
+
+> *"Criando grandes jogos juntos, com colaboração, aceleração e respeito criativo."*
