@@ -1,0 +1,400 @@
+/* Variáveis de Cores (Paleta Moderna Dark Mode) */
+:root {
+    --bg-color: #0b0f19; /* Fundo extremamente escuro, leve tom de azul marinho */
+    --bg-surface: #151a2a; /* Fundo de superfícies como cards */
+    --text-main: #e2e8f0; /* Texto principal cinza bem claro */
+    --text-muted: #94a3b8; /* Texto secundário acinzentado */
+    
+    /* Cores de Destaque */
+    --accent-primary: #8b5cf6; /* Roxo futurista */
+    --accent-secondary: #06b6d4; /* Ciano brilhante */
+    
+    /* Cores de Alerta/Estado */
+    --success: #10b981;
+    --error: #ef4444;
+    --warning: #f59e0b;
+    
+    /* Efeitos Glassmorphism (Vidro) */
+    --glass-bg: rgba(21, 26, 42, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+    position: relative;
+    /* Suavização de fonte para telas de alta resolução */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Efeitos de Fundo Animados */
+.background-effects {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.35;
+    animation: float 20s infinite ease-in-out alternate;
+}
+
+.orb-1 {
+    width: 600px;
+    height: 600px;
+    background: var(--accent-primary);
+    top: -150px;
+    left: -150px;
+}
+
+.orb-2 {
+    width: 500px;
+    height: 500px;
+    background: var(--accent-secondary);
+    bottom: -150px;
+    right: -150px;
+    animation-delay: -10s;
+}
+
+@keyframes float {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(100px, 50px) scale(1.1); }
+}
+
+/* Container de Layout */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Seções Gerais */
+.section {
+    margin-bottom: 6rem;
+}
+
+.section-title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #ffffff, var(--text-muted));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-intro {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+    max-width: 800px;
+}
+
+/* Hero Section (Cabeçalho) */
+.hero {
+    padding: 8rem 0 5rem;
+    text-align: center;
+    border-bottom: 1px solid var(--glass-border);
+    margin-bottom: 5rem;
+    /* Gradiente sutil do topo para baixo */
+    background: linear-gradient(to bottom, rgba(139, 92, 246, 0.08) 0%, transparent 100%);
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    background: rgba(139, 92, 246, 0.15);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    color: #c4b5fd;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: -1.5px;
+}
+
+.hero-title .highlight {
+    background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.6rem;
+    color: var(--text-main);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.hero-description {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Grid de Cards (Benefícios) */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 2.5rem;
+    backdrop-filter: blur(12px); /* Efeito de vidro */
+    -webkit-backdrop-filter: blur(12px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    border-color: rgba(139, 92, 246, 0.4);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.card p {
+    color: var(--text-muted);
+}
+
+/* Lista de Regras */
+.rule-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.rule-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    padding: 1.8rem;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.rule-item:hover {
+    background: rgba(255, 255, 255, 0.04);
+    transform: translateX(5px);
+}
+
+.rule-bullet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.rule-bullet.success {
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--success);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.rule-bullet.error {
+    background: rgba(239, 68, 68, 0.15);
+    color: var(--error);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.rule-bullet.warning {
+    background: rgba(245, 158, 11, 0.15);
+    color: var(--warning);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.rule-content {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.rule-content strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Seção Dividida (Copyright e Autoria) */
+.split-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.glass-panel {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 3rem;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    margin-bottom: 0;
+}
+
+.glass-panel .section-title {
+    font-size: 2rem;
+}
+
+.glass-panel p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+/* Caixa de Alerta (Caution) */
+.alert {
+    background: rgba(239, 68, 68, 0.05);
+    border-left: 4px solid var(--error);
+    padding: 1.8rem;
+    border-radius: 0 12px 12px 0;
+    margin-top: 2rem;
+}
+
+.alert-title {
+    color: var(--error);
+    font-size: 1.15rem;
+    margin-bottom: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.alert p {
+    margin-bottom: 0;
+    color: #cbd5e1;
+    font-size: 0.95rem;
+}
+
+/* Link do Autor */
+.author-link {
+    color: var(--accent-secondary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.author-link:hover {
+    color: #fff;
+    border-bottom: 1px solid var(--accent-secondary);
+    text-shadow: 0 0 15px rgba(6, 182, 212, 0.6);
+}
+
+/* Rodapé (Footer) */
+.footer {
+    border-top: 1px solid var(--glass-border);
+    padding: 5rem 0 3rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.quote {
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--text-main);
+    margin-bottom: 2.5rem;
+    position: relative;
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.quote::before, .quote::after {
+    color: var(--accent-primary);
+    opacity: 0.6;
+    font-size: 2rem;
+    font-family: serif;
+    position: absolute;
+    top: -10px;
+}
+
+.quote::before {
+    content: '"';
+    left: 0;
+}
+
+.quote::after {
+    content: '"';
+    right: 0;
+}
+
+.footer-copy {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Responsividade (Mobile) */
+@media (max-width: 900px) {
+    .split-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .rule-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .glass-panel {
+        padding: 2rem;
+    }
+}
